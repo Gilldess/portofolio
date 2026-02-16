@@ -14,7 +14,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex justify-between items-center container mx-auto relative z-50">
+    <nav className="flex justify-between items-center relative z-50">
       <Logo className="text-size-secondary md:text-size-primary" />
       <NavList items={navigation} />
       <HamburgerButton

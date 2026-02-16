@@ -36,7 +36,7 @@ const HamburgerButton = ({ isOpen, setIsOpen, items }) => {
             key={item.title}
             to={item.href}
             onClick={() => setIsOpen(false)}
-            className="hover:text-primary transition-colors"
+
           >
             {item.title}
           </Link>
