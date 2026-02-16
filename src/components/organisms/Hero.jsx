@@ -31,18 +31,24 @@ Hero.Header = ({ children, pargraph, btn }) => {
 };
 Hero.Body = () => {
   return (
-    <div className="relative">
-      <div className="absolute -bottom-6 left-5 w-100 rounded-full h-100 bg-primary"></div>
-      <div className="overflow-hidden w-auto md:w-82.5 xl:w-110 h-auto">
-        <Image src={Profile} alt="profile" className="relative z-10" />
+    <div className="relative mx-auto xl:mx-0 mt-10 md:mt-0">
+      <div className="absolute -bottom-6 left-5 w-[90%] h-[90%] rounded-full bg-primary/90 z-0"></div>
+
+      <div className="relative overflow-hidden w-64 sm:w-72 md:w-80 xl:w-100 h-auto">
+        <Image
+          src={Profile}
+          alt="profile"
+          className="relative z-10 w-full h-auto object-cover"
+        />
       </div>
-      <div className="w-45 h-45 absolute -bottom-10 z-20 -left-5 flex justify-center items-center bg-secondary rounded-full">
-        <SiReact className="text-8xl text-[#61DAFB]" />
+
+      <div className="w-18 h-18 md:w-28 md:h-28 xl:w-32 xl:h-32 absolute -bottom-2 left-3 md:-left-5 z-20 flex justify-center items-center bg-secondary shadow-lg rounded-full p-3 md:p-5">
+        <SiReact className="w-full h-full text-[#61DAFB] animate-[spin_10s_linear_infinite]" />
       </div>
-      <div className="w-30 h-30 absolute top-6 z-20 right-5 flex justify-center items-center bg-secondary rounded-full">
-        <SiNodedotjs className="text-7xl text-[#339933]" />
+      <div className="w-14 h-14 md:w-20 md:h-20 xl:w-24 xl:h-24 absolute top-12 right-5 md:right-4 z-20 flex justify-center items-center bg-secondary shadow-lg rounded-full p-2 md:p-4">
+        <SiNodedotjs className="w-full h-full text-[#339933]" />
       </div>
-      <div className="w-15 h-15 absolute -top-20 right-20 bg-secondary rounded-full"></div>
+      <div className="w-10 h-10 xl:w-15 xl:h-15 absolute -top-10 right-10 md:-top-16 md:right-20 bg-secondary/50 rounded-full blur-xs"></div>
     </div>
   );
 };
