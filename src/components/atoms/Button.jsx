@@ -6,7 +6,7 @@ const variant = {
 const Button = ({ children, className = "bg-primary", onClick, variantsize }) => {
     return (
         <button 
-        className={`border-none rounded-md ${className} ${variant[variantsize] || variant.sizeprimary}`}
+        className={`rounded-md ${className} ${variant[variantsize] || variant.sizeprimary}`}
         onClick={onClick}>
             {children}
         </button>

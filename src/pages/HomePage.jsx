@@ -1,3 +1,4 @@
+import Aboute from "../components/organisms/Aboute";
 import Hero from "../components/organisms/Hero";
 import Navbar from "../components/organisms/Navbar";
 import HomeLayout from "../components/templates/HomeLayout";
@@ -9,15 +10,15 @@ function Home() {
       hero={
         <Hero>
           <Hero.Header
-          pargraph="i am fullstack developer and i am very passionate in web development"
-          btn="My Works"
+          pargraph="Saya telah menyelesaikan program bootcamp Pengembang Web Full-Stack dari harisenin.com untuk memperdalam keterampilan sebagai Pengembang Web. Lihat proyek-proyek terbaru saya, yang menunjukkan keahlian saya dalam pengembangan web."
           >
-            Hello My Name is.{" "}
-          <span className="font-bold text-primary">Agil Desta Hernanda</span>
+            Mengubah Ide Menjadi {""}
+          <span className="font-bold text-primary">Pengalaman Digital.</span>
           </Hero.Header>
           <Hero.Body />
         </Hero>
       }
+      aboute={<Aboute></Aboute>}
     />
   );
 }

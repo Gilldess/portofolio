@@ -3,7 +3,7 @@ const variant = {
     sizesecondary: "text-size-quaternary lg:text-size-tertiary",
 }
 
-const Pargraph = ({ children, className= "", variantsize }) => {
+const Paragraph = ({ children, className= "", variantsize }) => {
     return (
         <p className={`${className} ${variant[variantsize] || variant.sizeprimary}`}>
             {children}
@@ -11,4 +11,4 @@ const Pargraph = ({ children, className= "", variantsize }) => {
     )
 }
 
-export default Pargraph
+export default Paragraph
