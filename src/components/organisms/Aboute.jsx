@@ -13,7 +13,7 @@ const skills = [
     },
     {
         bidang: "Backend",
-        skill: ["Nodejs", "Expressjs,", "MongoDB", "MySQL"]
+        skill: ["Node.js", "Express.js", "MongoDB", "MySQL"]
     },
     {
         bidang: "Tools",
@@ -23,17 +23,17 @@ const skills = [
 const Aboute = () => {
     return (
         <div>
-            <Heading level={2} variantsize="sizesecondary" className="font-secondary text-secondary font-normal">Tentang saya</Heading>
+            <Heading level={2} variantsize="sizesecondary" className="font-secondary text-secondary dark:text-tertiary font-normal">Tentang saya</Heading>
             <div className="grid grid-rows gird-flow-dense gap-6 md:gap-16 mt-6 md:grid-cols-2 justify-between">
                 <div className="flex flex-col order-2 md:order-1 gap-3">
                             {
                                 skills.map((item) => (
-                                 <div className="py-4 px-6 md:py-8 md:px-12 rounded-md bg-secondary" key={item.bidang}>
+                                 <div className="py-4 px-6 md:py-8 md:px-12 rounded-md bg-secondary dark:bg-tertiary" key={item.bidang}>
                                     <Heading level={3} variantsize="sizetertiary" className="font-secondary text-primary">{item.bidang}</Heading>
                                     <div className="flex flex-wrap gap-2 md:gap-4 mt-2">
                                         {
                                             item.skill.map((skill) => (
-                                                <p key={skill} className="font-primary text-tertiary hover:text-tertiary/50 transition-colors duration-300 text-size-quaternary md:text-size-secondary">
+                                                <p key={skill} className="font-primary text-tertiary dark:text-secondary dark:hover:text-secondary/50 hover:text-tertiary/50 transition-colors duration-300 text-size-quaternary md:text-size-secondary">
                                                     {skill}
                                                 </p>
                                             ))
@@ -46,7 +46,7 @@ const Aboute = () => {
                 </div>
                 <div className="order-1 md:order-2">
                     <Heading level={3} variantsize="sizetertiary" className="font-secondary text-primary">Pengalaman</Heading>
-                    <Paragraph variantsize="sizesecondary" className="font-primary mt-2 tracking-[1.5px] text-secondary/80">
+                    <Paragraph variantsize="sizesecondary" className="font-primary mt-2 tracking-[1.5px] text-secondary/80 dark:text-tertiary/80">
                         Pengembang Full-Stack Junior dengan dasar yang kuat dalam ekosistem JavaScript modern. Melalui program pelatihan intensif di bidang TI dan pengalaman magang, saya telah berhasil melakukan transisi karier yang mulus ke industri teknologi. Saya memiliki pengalaman langsung dalam lingkungan Agile Scrum, termasuk mengembangkan sistem logika perhitungan berbasis JavaScript yang kompleks.
                         Saya juga telah mengembangkan platform kursus daring full-stack menggunakan React, Tailwind CSS, dan Redux Toolkit, serta arsitektur API RESTful yang dibangun dengan Express dan MySQL. Saat ini, saya sedang mencari kesempatan kerja penuh waktu untuk membantu merancang produk yang berdampak bersama tim teknik yang dinamis.
                     </Paragraph>

@@ -1,12 +1,24 @@
+import { useState } from "react";
 import Aboute from "../components/organisms/Aboute";
 import Hero from "../components/organisms/Hero";
 import Navbar from "../components/organisms/Navbar";
 import HomeLayout from "../components/templates/HomeLayout";
+import Project from "../components/organisms/Project";
 
-function Home() {
+const Home = () => {
+    const [isDark, setIsDark] = useState(()=> {
+    return localStorage.getItem("theme") === "dark";
+  });
+if (isDark) {
+  document.documentElement.classList.add("dark");
+  localStorage.setItem("theme", "dark");
+} else {
+  document.documentElement.classList.remove("dark");
+  localStorage.setItem("theme", "light");
+}
   return (
     <HomeLayout
-      navbar={<Navbar />}
+      navbar={<Navbar isDark={isDark} setIsDark={setIsDark} />}
       hero={
         <Hero>
           <Hero.Header
@@ -18,7 +30,8 @@ function Home() {
           <Hero.Body />
         </Hero>
       }
-      aboute={<Aboute></Aboute>}
+      aboute={<Aboute />}
+      project={<Project />}
     />
   );
 }

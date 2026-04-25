@@ -2,7 +2,6 @@ import Heading from "../atoms/Heading";
 import Image from "../atoms/Image";
 import Paragraph from "../atoms/Paragraph";
 import Profile from "../../assets/img_pp.png";
-import Button from "../atoms/Button";
 import { Link } from "react-router";
 import { SiNodedotjs, SiReact, SiTailwindcss } from "react-icons/si";
 
@@ -16,12 +15,12 @@ const Hero = ({ children }) => {
 
 Hero.Header = ({ children, pargraph}) => {
   return (
-    <div className="space-y-4 w-auto lg:w-1/2">
-      <Heading level={1} variantsize="sizeprimary" className="font-secondary">
+    <div className="space-y-2 w-auto lg:w-1/2">
+      <Heading level={1} variantsize="sizeprimary" className="font-secondary dark:text-tertiary text-secondary">
         {children}
       </Heading>
-      <Paragraph variantsize="variantprimary" className="font-primary mt-6">{pargraph}</Paragraph>
-      <div className="space-x-2">
+      <Paragraph variantsize="variantprimary" className="font-primary dark:text-tertiary/80 text-secondary">{pargraph}</Paragraph>
+      <div className="space-x-4 mt-12">
         <Link
         to="https://drive.google.com/file/d/1n8XfHOxnPkcnebZ1L2zoW8-_dLvh1jnw/view?usp=drive_link"
           className="w-fit bg-primary/80 mt-2 text-tertiary font-bold text-size-quaternary lg:text-size-tertiary px-4 py-2 rounded-md hover:bg-primary transition-colors duration-300"
