@@ -15,10 +15,23 @@
   --text-size-quaternary: 14px;
 }
 
-
 @layer base {
 
   *, ::before, ::after {
     @apply transition-colors duration-300 ease-in-out;
+  }
+}
+
+html, body, #root {
+  scroll-behavior: smooth !important;
+}
+
+/* Memaksa elemen yang punya overflow untuk tetap smooth */
+* {
+  scroll-behavior: smooth !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: smooth !important;
   }
 }

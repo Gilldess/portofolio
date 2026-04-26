@@ -1,15 +1,23 @@
-import { Link } from "react-router";
+import { Link } from "react-scroll";
 
-const NavLink = ({ to, children, isActive, onMouseEnter }) => (
-  <Link
-    to={to}
-    onMouseEnter={onMouseEnter}
-    className={`px-2 py-1 rounded-md transition-all duration-500 border-b-3 ${
-      isActive ? "border-primary" : "border-transparent"
-    }`}
-  >
-    {children}
-  </Link>
-);
+const NavLink = ({ to, isActive, onMouseEnter, children, className }) => {
+  // react-scroll tidak butuh tanda pagar (#), jadi kita hilangkan
+  const targetId = to.replace("#", "");
+
+  return (
+    <Link
+      to={targetId}
+      smooth={true}
+      duration={500}
+      offset={-100}     
+      onMouseEnter={onMouseEnter}
+      className={`cursor-pointer transition-colors duration-300 ${className} ${
+        isActive ? "text-primary" : "text-tertiary dark:text-secondary hover:text-primary"
+      }`}
+    >
+      {children}
+    </Link>
+  );
+};
 
 export default NavLink;

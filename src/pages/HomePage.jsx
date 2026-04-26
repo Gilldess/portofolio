@@ -4,6 +4,8 @@ import Hero from "../components/organisms/Hero";
 import Navbar from "../components/organisms/Navbar";
 import HomeLayout from "../components/templates/HomeLayout";
 import Project from "../components/organisms/Project";
+import Contact from "../components/organisms/Contact";
+import Footer from "../components/organisms/Footer";
 
 const Home = () => {
     const [isDark, setIsDark] = useState(()=> {
@@ -32,6 +34,8 @@ if (isDark) {
       }
       aboute={<Aboute />}
       project={<Project />}
+      contact={<Contact />}
+      footer={<Footer />}
     />
   );
 }

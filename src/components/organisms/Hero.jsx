@@ -4,6 +4,7 @@ import Paragraph from "../atoms/Paragraph";
 import Profile from "../../assets/img_pp.png";
 import { Link } from "react-router";
 import { SiNodedotjs, SiReact, SiTailwindcss } from "react-icons/si";
+import NavLink from "../atoms/NavLink";
 
 const Hero = ({ children }) => {
   return (
@@ -23,16 +24,17 @@ Hero.Header = ({ children, pargraph}) => {
       <div className="space-x-4 mt-12">
         <Link
         to="https://drive.google.com/file/d/1n8XfHOxnPkcnebZ1L2zoW8-_dLvh1jnw/view?usp=drive_link"
-          className="w-fit bg-primary/80 mt-2 text-tertiary font-bold text-size-quaternary lg:text-size-tertiary px-4 py-2 rounded-md hover:bg-primary transition-colors duration-300"
+        target="_blank"
+        className="w-fit bg-primary/80 mt-2 text-tertiary font-bold text-size-quaternary lg:text-size-tertiary px-4 py-2 rounded-md hover:bg-primary transition-colors duration-300"
         >
           Resume
         </Link>
-        <Link
-        to="https://drive.google.com/file/d/1n8XfHOxnPkcnebZ1L2zoW8-_dLvh1jnw/view?usp=drive_link"
-          className="w-fit bg-secondary/80 mt-2 text-tertiary font-bold text-size-quaternary lg:text-size-tertiary px-4 py-2 rounded-md hover:bg-secondary transition-colors duration-300"
+        <NavLink
+        to="#contact"
+        className="w-fit bg-secondary/80 mt-2 border text-tertiary font-bold text-size-quaternary lg:text-size-tertiary px-4 py-2 rounded-md hover:bg-secondary transition-colors duration-300"
         >
           Kontak
-        </Link>
+        </NavLink>
       </div>
     </div>
   );

@@ -25,7 +25,7 @@ const Project = () => {
     },
     {
       id: 3,
-      title: "Introduction Bakery Landing Page",
+      title: "Bakery Landing Page",
       description: "Landing page responsif dan modern dengan fitur dark mode filter menu dan animasi mengunakan motion.",
       image: imgProject,
       techStack: ["React", "Tailwind CSS v4", "Framer Motion"],
@@ -61,7 +61,7 @@ const Project = () => {
 
               {/* Konten Card */}
               <div className="p-6 flex flex-col grow">
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2 transition-colors group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2 transition-colors group-hover:text-primary dark:group-hover:text-primary">
                   {project.title}
                 </h3>
                 <p className="text-slate-600 dark:text-slate-400 mb-4 flex-grow text-sm">
@@ -90,7 +90,7 @@ const Project = () => {
                   <a
                     href={project.liveUrl} 
                     target="_blank"
-                    className="flex items-center gap-2 text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
+                    className="flex items-center gap-2 text-sm font-medium text-primary dark:text-primary/50 hover:text-primary/70 dark:hover:text-primary/30 transition-colors"
                   >
                     <FiExternalLink className="text-lg" /> Live Demo
                   </a>
