@@ -31,7 +31,7 @@ Hero.Header = ({ children, pargraph}) => {
         </Link>
         <NavLink
         to="#contact"
-        className="w-fit bg-secondary/80 mt-2 border text-tertiary font-bold text-size-quaternary lg:text-size-tertiary px-4 py-2 rounded-md hover:bg-secondary transition-colors duration-300"
+        className="w-fit bg-secondary/80 !text-tertiary mt-2 border font-bold text-size-quaternary lg:text-size-tertiary px-4 py-2 rounded-md hover:bg-secondary transition-colors duration-300"
         >
           Kontak
         </NavLink>

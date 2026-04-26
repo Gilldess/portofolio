@@ -5,7 +5,7 @@ const NavList = ({ items }) => {
   const [hoverIndex, setHoverIndex] = useState(0);
 
   return (
-    <div className="text-tertiary hidden md:flex gap-3 text-size-tertiary font-primary">
+    <div className="hidden md:flex gap-3 text-size-tertiary font-primary">
       {items.map((item, index) => (
         <NavLink
           key={item.title}
