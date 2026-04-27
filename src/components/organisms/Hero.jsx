@@ -23,7 +23,7 @@ Hero.Header = ({ children, pargraph}) => {
       <Paragraph variantsize="variantprimary" className="font-primary dark:text-tertiary/80 text-secondary">{pargraph}</Paragraph>
       <div className="space-x-4 mt-12">
         <Link
-        to="https://drive.google.com/file/d/1n8XfHOxnPkcnebZ1L2zoW8-_dLvh1jnw/view?usp=drive_link"
+        to="https://drive.google.com/file/d/1Ta0_HijjNgXkFEwhoazoTDsIX_OyUH3q/view?usp=drive_link"
         target="_blank"
         className="w-fit bg-primary/80 mt-2 text-tertiary font-bold text-size-quaternary lg:text-size-tertiary px-4 py-2 rounded-md hover:bg-primary transition-colors duration-300"
         >
